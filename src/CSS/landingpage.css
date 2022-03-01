@@ -1,0 +1,48 @@
+.lpb2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.landingpage {
+    position: relative;
+  text-align: center;
+  color: white;
+}
+/* 
+.landingimage1 {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  } */
+
+  .landingcontainer {
+    position: absolute;
+    height: 700px !important;
+    width: 100%;
+    padding: 10% 20% 10% 20%;
+  }
+
+.btn1 {
+  padding-left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .css-k008qs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .css-1tq3z8a {
+    height: 900px !important;
+  }
+}
+
+.img-fluid {
+  transition: transform .5s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+}
