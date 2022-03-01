@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Links
+Github Frotend: https://github.com/Ekam-Rhett/smm-app-frontend
+Github Backend: https://github.com/Ekam-Rhett/smm-assignment-backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Backend Deployment: https://api.thebigbusiness.xyz/
+Frontend Deployment: https://thebigbusiness.xyz/
 
-## Available Scripts
+#   R1: 
+The application is a Social Media Marketing (SMM) panel. It’s a place for users to purchase services such as Followers, Likes and comments for various types of Social Medias to help promote and grow their social followings as well as promote their products and get attention to them.
 
-In the project directory, you can run:
+The application will be built using the MERN Stack; consisting of Node.js as the backend, MongoDB as the database, React.JS as a front-end framework with the help of Bootstrap, and Express.js as the backend framework.
 
-### `npm start`
+The application will consist of the follow main features.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-	The admins will have an Authentication & Authorisation System (The users will not have a login/register system to deliver an efficient and a friendly user experience).
+-	The admins will have an order history page where admins will have access to viewing and modify orders that are placed by the user.
+-	The admin panel will further contain a payment history which will have a log of all payments made including their details such as payment ID, payment method, amount paid as well as what order ID the payment belongs to.
+-	Admins will have a site setting page where settings such as panel details, payment details, and notification (email) settings can be configured.
+-	The services will be delivered via a use of an API from topnotchgrowth.com/api
+o	The admins will have a Category system (create/edit/delete) and services below each category. For e.g. “Instagram Followers” may be the name of category containing numerous Instagram followers’ services such as High quality, low quality with deafferenting amounts of quantity that can be ordered.
+o	The admin will be able to enter the service ID (found on topnotchgrowth.com/services) to import the service in from the topnotchgrowth.com’s API and further configure the details such as displayed title, quantity, retail price and etc.
+o	Once categories and services have been configured. The users can place the order. After a successful payment the order will automatically be placed to topnotchgrowth.com where they will deliver the service.
+-	The users will be able to simply an order via selecting the service of their choice, entering their details such as email, username to their account/link to their post and then making a payment via Stripe
+The target audience for this app mainly be business owners or any customer that would like to promote and grow their social following as well as bring attention to their products or services to increase sales – quickly and easily. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+#   R2: 
+![dataflow-diagram](./docs/Dataflow-Diagram.jpeg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#   R3: 
+![application-diagram](./docs/Application-Architecture-Diagram.jpg)
 
-### `npm run build`
+#   R4: **View on Full-Screen**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#   User Stoy ID | As a (persona) | I want to (what)	                                                  | So that I can (why)
+--------------------------------------------------------------------------------------------
+1	                User	     Be provided with a payment ID after processing a purchase	             Ensure the order is completed
+2	                User	     See my social media account displayed before payment	                 Confirm that the order is going to the correct account
+3	                User	     Be able to email the admins of the page directly	                     Raise any issues that may come up with my order
+3 revised	        User	     Be able to lodge tickets connected to my payment ID	                 Raise any issues that may come up with my order
+4	                User	     Be able to request likes and followers to my pages	                     Draw attention to procucts I believe are worth investing in
+4 revised	        User	     Be able to select the quality of likes/ followers	                     Send higher quality bots to more important posts
+5	                User	     Choose the payment method for this service	Use the payment method which works best for me
+6	                User	     Have the price to change dynamically based on the current botting price Choose to pay for bots at a cheaper time
+7	                User	     Be able to change site settings	                                     To get a better user experience
+8	                User	     Be able to receive tracking information	                             see the status of payment and order
+9	                Admin	     View all current tickets and linked payment ID	                         Action tickets in a timely mannor
+10	                Admin	     View and track the details of all payments	                             Refer to these details if any issues are to arise
+11	                Admin	     Get a variety of services from botting website's API	                 Provide many different services to the customers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#   R5:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![wireframe0](./docs/Wireframe_Diagram(0).jpg)
+![wireframe1](./docs/Wireframe_Diagram(1).jpg)
+![wireframe2](./docs/Wireframe_Diagram(2).jpg)
+![wireframe3](./docs/Wireframe_Diagram(3).jpg)
+![wireframe4](./docs/Wireframe_Diagram(4).jpg)
+![wireframe5](./docs/Wireframe_Diagram(5).jpg)
+![wireframe6](./docs/Wireframe_Diagram(6).jpg)
+![wireframe7](./docs/Wireframe_Diagram(7).jpg)
+![wireframe8](./docs/Wireframe_Diagram(8).jpg)
+![wireframe9](./docs/Wireframe_Diagram(9).jpg)
+![wireframe10](./docs/Wireframe_Diagram(10).png)
+![wireframe11](./docs/Wireframe_Diagram(11).png)
+![wireframe12](./docs/Wireframe_Diagram(12).png)
+![wireframe13](./docs/Wireframe_Diagram(13).png)
+![wireframe14](./docs/Wireframe_Diagram(14).png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#   R6: 
+![trello1](docs/Trello1.png)
+![trello2](docs/Trello2.png)
+![trello3](docs/Trello3.png)
+![trello4](docs/Trello4.png)
